@@ -53,7 +53,7 @@ public class ParticipantRestController {
 	
 	//DELETE localhost:8080/participants/user2
 	@RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
-	public ResponseEntity<?> getParcicipant(@PathVariable("id") String login) {
+	public ResponseEntity<?> getParcitipant(@PathVariable("id") String login) {
 	    Participant participant = participantService.findByLogin(login);
 	if (participant == null) { 
 	return new ResponseEntity(HttpStatus.NOT_FOUND);
